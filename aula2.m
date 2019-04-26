@@ -1,12 +1,12 @@
 %Primeiro exercício
 #{D=imread('onion.png');
-Dred=D(:,:,1);
-Dgreen=D(:,:,2);
-Dblue=D(:,:,3);
-subplot(2,2,1); imshow(D); axis image;
-subplot(2,2,2); imshow(Dred); title('red');
-subplot(2,2,3); imshow(Dgreen); title('green');
-subplot(2,2,4); imshow(Dblue); title('blue');
+%Dred=D(:,:,1);
+%Dgreen=D(:,:,2);
+%Dblue=D(:,:,3);
+%subplot(2,2,1); imshow(D); axis image;
+%subplot(2,2,2); imshow(Dred); title('red');
+%subplot(2,2,3); imshow(Dgreen); title('green');
+%subplot(2,2,4); imshow(Dblue); title('blue');
 #}
 
 %Segundo exercício
@@ -26,6 +26,7 @@ end
 #}
 
 %Terceiro exercício
+#{
 A=imread('cameraman.tif');
 subplot(1,2,1), imshow(A);
 B = imadd(A, 100);
@@ -45,3 +46,4 @@ P = imread(‘peppers.png’);
 Rs = imadd(P, 100);
 figure ; imshow(P);
 figure ; imshow(Rs);
+}#

@@ -10,8 +10,8 @@
 %subplot(2,4,4),imshow(OutputAnd);
 %OutputOr = or(Abw, Bbw);
 %subplot(2,4,5),imshow(OutputOr);
-A=imread('/home/aluno/Documentos/cameraman.png');
-B=imread('/home/aluno/Documentos/onion.png');
+A=imread('cameraman.png');
+B=imread('onion.png');
 OutputCinzaInvertido1=max(A)-A;
 OutputCinzaInvertido2=255-A;
 peppersInverso(:,:,1)=255-B(:,:,1);

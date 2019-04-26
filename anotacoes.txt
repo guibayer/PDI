@@ -1,0 +1,43 @@
+-->Endereçamento do matlab começa em (1,1)
+-->operações aritméticas:
+->pixel à pixel => um a um
+->escalar => um pixel definira uma série de pixeis
+
+tipos de op aritméticas:
+Adição->imgs com ruído(como o ruido tem valor médio zero a soma de diversas imagens
+semelhantes ruidosas acaba em uma imagem mais clara)
+
+Subtração->Pode ser usado para detectar contraste(exemplo das duas imgs de refri
+subtraindo uma da outra é ressaltado que uma delas foi esvaziada)
+**Se usa a diferença absoluta para evitar overflow e underflow
+
+Mult e div -> podem estender a adição em div no ajuste de contraste
+(img colour scaling)
+
+Ajuste de contraste-> somar uma constance C a cada posição aumenta o brilho da img
+Blending->Somar n imagens de mesmo tamanho para criar uma img composta
+
+
+----------------------
+Operações Lógicas:
+Inverso-> MAX(no caso do nosso exerc usamos 255) - Ioutput
+OR/XOR->detectar imgs que se movem em diferentes quadros
+AND->usada para detectar diferenças/ou detectar regiões alvos como uma
+mascara binária
+
+Transformações pontuais limiar(thresholding):
+-->Em muitas aplicações imagens 
+coloridas são convertidas para a escala de cinza antes de se aplicar o 
+limiar para simplificar o processo;
+-->Manter a informação do pixel original para valores
+selecionados (ou seja, acima / entre os limites) enquanto
+outros são configurados para preto.
+
+---------------------------
+Transformações logarítmicas:
+Aumenta a faixa dinâmica em regiões
+escuras, diminui a faixa dinâmica em regiões claras. 
+
+Transformações exponenciais:
+Diminui a faixa dinâmica em regiões escuras, 
+aumenta a faixa dinâmica em regiões claras
